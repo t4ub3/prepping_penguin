@@ -1,0 +1,30 @@
+{
+    "recipes": [
+        {
+            "name": "Suppe",
+            "ingredients": [
+                {
+                    "name": "Wasser",
+                    "amount": "1 Liter"
+                },
+                {
+                    "name": "Brühe",
+                    "amount": "1 Teelöffel"
+                }
+            ]
+        },
+        {
+            "name": "Kartoffelbrei",
+            "ingredients": [
+                {
+                    "name": "Kartoffel",
+                    "amount": "1 kg"
+                },
+                {
+                    "name": "Salz",
+                    "amount": "1 Prise"
+                }
+            ]
+        }
+    ]
+}
