@@ -5,9 +5,8 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 64,
-      decoration: const BoxDecoration(color: Color.fromARGB(255, 25, 109, 91)),
       child: const Center(child: Text("bar", textDirection: TextDirection.ltr)),
     );
   }
