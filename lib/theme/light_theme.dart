@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BrightTheme {
-  static ThemeData brightTheme = ThemeData(
+class LightTheme {
+  static ThemeData lightTheme = ThemeData(
     colorScheme: ColorScheme.fromSeed(
       brightness: Brightness.light,
       seedColor: Color(0xFF8AA624),
@@ -9,6 +9,6 @@ class BrightTheme {
       surface: Color(0xFFDBE4C9),
       surfaceBright: Color(0xFFFFFFF0),
     ),
+    fontFamily: 'PoiretOne',
   );
-  
 }

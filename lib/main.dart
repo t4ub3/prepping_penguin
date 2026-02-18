@@ -1,11 +1,17 @@
-
 import 'package:flutter/material.dart';
-import 'package:prepping_penguin/widgets/nav_bar.dart';
-import 'package:prepping_penguin/assets/ressources/bright_theme.dart' as foo_bar;
-
+import 'package:prepping_penguin/pages/home.dart';
+import 'package:prepping_penguin/widgets/header_bar.dart';
+import 'package:prepping_penguin/theme/light_theme.dart' as light_theme;
 
 void main() {
-  runApp(const MaterialApp(title: 'Prepping Penguin', home: MyApp(), theme: foo_bar.BrightTheme.brightTheme));
+  runApp(
+    MaterialApp(
+        debugShowCheckedModeBanner: false,
+      title: 'Prepping Penguin',
+      theme: light_theme.LightTheme.lightTheme,
+      home: HomePage(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,28 +21,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 204, 221, 105),
-      ),
-      //theme: brightTheme.BrightTheme.brightTheme,
+      color: Theme.of(context).colorScheme.surface,
       child: Column(
         children: [
-          NavBar(),
+          HeaderBar(),
           Container(
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 105, 221, 140),
-            ),
+            color: Theme.of(context).colorScheme.surface,
             child: Center(
-              child: Text(
-                'Hello World',
-                textDirection: TextDirection.ltr,
+              child: DefaultTextStyle(
                 style: TextStyle(
                   fontSize: 32,
-                  color: Color.fromARGB(255, 61, 4, 4),
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
+                child: Text('Hello World', textDirection: TextDirection.ltr),
               ),
             ),
           ),
+          Image(image: AssetImage('assets/images/penguin.jpeg')),
         ],
       ),
     );
