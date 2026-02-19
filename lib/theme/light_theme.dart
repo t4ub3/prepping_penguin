@@ -9,6 +9,12 @@ class LightTheme {
       surface: Color(0xFFDBE4C9),
       surfaceBright: Color(0xFFFFFFF0),
     ),
+    textTheme: TextTheme(
+        titleLarge: const TextStyle(
+        fontSize: 72,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
     fontFamily: 'PoiretOne',
   );
 }
